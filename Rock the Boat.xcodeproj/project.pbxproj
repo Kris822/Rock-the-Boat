@@ -14,6 +14,7 @@
 		A42126BC2708F98700032411 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A42126BB2708F98700032411 /* Assets.xcassets */; };
 		A42126BF2708F98700032411 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42126BD2708F98700032411 /* LaunchScreen.storyboard */; };
 		A42126C82708FC9600032411 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A42126CA2708FC9600032411 /* Localizable.strings */; };
+		A42126CD270901AB00032411 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42126CC270901AB00032411 /* UIImageViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		A42126C02708F98700032411 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A42126C92708FC9600032411 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A42126CB2708FC9F00032411 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A42126CC270901AB00032411 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				A42126BD2708F98700032411 /* LaunchScreen.storyboard */,
 				A42126C02708F98700032411 /* Info.plist */,
 				A42126CA2708FC9600032411 /* Localizable.strings */,
+				A42126CC270901AB00032411 /* UIImageViewExtension.swift */,
 			);
 			path = "Rock the Boat";
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			files = (
 				A42126B72708F97500032411 /* ViewController.swift in Sources */,
 				A42126B32708F97500032411 /* AppDelegate.swift in Sources */,
+				A42126CD270901AB00032411 /* UIImageViewExtension.swift in Sources */,
 				A42126B52708F97500032411 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
