@@ -5,3 +5,7 @@
   Created by Lee, Christopher on 10/2/21.
   
 */
+"button1" = "Make the Boat Dissapear";
+"button2" = "Move Buttons";
+"button3" = "Watch the Boat Rock";
+"button4" = "Constraint Animation";
