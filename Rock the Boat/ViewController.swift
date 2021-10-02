@@ -9,10 +9,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+ 
+    @IBOutlet weak var buttonOne: UIButton!
+    
+    @IBOutlet weak var buttonTwo: UIButton!
+    
+    @IBOutlet weak var buttonThree: UIButton!
+    
+    @IBOutlet weak var buttonFour: UIButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        buttonOne?.setTitle(NSLocalizedString("button1", comment: "this animation makes the boat dissapear the reappear"), for: .normal)
+        buttonTwo?.setTitle(NSLocalizedString("button2", comment: "this animation makes the buttons change"), for: .normal)
+        buttonThree?.setTitle(NSLocalizedString("button3", comment: "this animation makes the boat rock back and forth"), for: .normal)
+        buttonFour?.setTitle(NSLocalizedString("button4", comment: "this animation makes the boat grow or shrink"), for: .normal)
     }
 
 
@@ -23,15 +37,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonGroup: UIStackView!
     
     
-    @IBAction func buttonOne(_ sender: Any) {
-    }
-    
-    @IBAction func buttonTwo(_ sender: Any) {
-    }
-    @IBAction func buttonThree(_ sender: Any) {
-    }
-    @IBAction func ButtonFour(_ sender: Any) {
-    }
+
     
     @IBAction func hideBoat(_ sender: Any) {
         

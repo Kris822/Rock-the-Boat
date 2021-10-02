@@ -31,7 +31,6 @@
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="buttonOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TIP-pa-RKx"/>
                                             <action selector="hideBoat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fUu-tK-7As"/>
                                         </connections>
                                     </button>
@@ -41,7 +40,6 @@
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="buttonTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o6N-Tz-KHx"/>
                                             <action selector="moveButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GzR-MB-BfO"/>
                                         </connections>
                                     </button>
@@ -52,7 +50,6 @@
                                         </state>
                                         <connections>
                                             <action selector="boatRocking:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QZM-8F-BAa"/>
-                                            <action selector="buttonThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xWe-3d-vCB"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYV-7Z-NWs">
@@ -61,7 +58,6 @@
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="ButtonFour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EXK-gD-VvA"/>
                                             <action selector="makeBoatSmaller:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Bq-Zh-NiJ"/>
                                         </connections>
                                     </button>
@@ -79,7 +75,11 @@
                     </view>
                     <connections>
                         <outlet property="boatWidth" destination="076-Bf-3gN" id="8rp-5P-BQH"/>
+                        <outlet property="buttonFour" destination="lYV-7Z-NWs" id="n8z-2j-5Ad"/>
                         <outlet property="buttonGroup" destination="BGO-e4-M0N" id="oPx-Az-aYe"/>
+                        <outlet property="buttonOne" destination="Iq9-iO-lSz" id="F6J-NX-JFj"/>
+                        <outlet property="buttonThree" destination="5IQ-pa-Ifw" id="eTq-uM-VBl"/>
+                        <outlet property="buttonTwo" destination="4xS-C0-brH" id="j81-c1-QKw"/>
                         <outlet property="theBoat" destination="9kV-qZ-2Qp" id="TmH-CX-1si"/>
                     </connections>
                 </viewController>
