@@ -31,6 +31,7 @@
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
+                                            <action selector="buttonOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TIP-pa-RKx"/>
                                             <action selector="hideBoat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fUu-tK-7As"/>
                                         </connections>
                                     </button>
@@ -40,6 +41,7 @@
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
+                                            <action selector="buttonTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o6N-Tz-KHx"/>
                                             <action selector="moveButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GzR-MB-BfO"/>
                                         </connections>
                                     </button>
@@ -50,6 +52,7 @@
                                         </state>
                                         <connections>
                                             <action selector="boatRocking:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QZM-8F-BAa"/>
+                                            <action selector="buttonThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xWe-3d-vCB"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYV-7Z-NWs">
@@ -58,6 +61,7 @@
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
+                                            <action selector="ButtonFour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EXK-gD-VvA"/>
                                             <action selector="makeBoatSmaller:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Bq-Zh-NiJ"/>
                                         </connections>
                                     </button>
@@ -81,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="290" y="204"/>
+            <point key="canvasLocation" x="159" y="48"/>
         </scene>
     </scenes>
     <resources>

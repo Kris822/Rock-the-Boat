@@ -22,6 +22,17 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var buttonGroup: UIStackView!
     
+    
+    @IBAction func buttonOne(_ sender: Any) {
+    }
+    
+    @IBAction func buttonTwo(_ sender: Any) {
+    }
+    @IBAction func buttonThree(_ sender: Any) {
+    }
+    @IBAction func ButtonFour(_ sender: Any) {
+    }
+    
     @IBAction func hideBoat(_ sender: Any) {
         
         UIView.animate(withDuration: 2, animations: {
@@ -37,7 +48,7 @@ class ViewController: UIViewController {
     @IBAction func moveButtons(_ sender: Any) {
         
         let transform = CGAffineTransform.identity.scaledBy(x: 0.01, y: 0.01)
-        
+
         buttonGroup.transform = transform
         
         UIView.animate(withDuration: 2, animations: {
@@ -70,10 +81,16 @@ class ViewController: UIViewController {
     @IBAction func makeBoatSmaller(_ sender: Any) {
         
         if(boatWidth.constant <= 150){
-            boatWidth.constant += 50
+            UIView.animate(withDuration: 2, animations: {
+                self.boatWidth.constant += 50
+                self.view.layoutIfNeeded()
+            })
         }
         else{
-            boatWidth.constant -= 50
+            UIView.animate(withDuration: 2, animations: {
+                self.boatWidth.constant -= 50
+                self.view.layoutIfNeeded()
+            })
         }
         
         
