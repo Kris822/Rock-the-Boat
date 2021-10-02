@@ -18,7 +18,9 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var theBoat: UIImageView!
     
-    @IBOutlet var buttonGroup: [UIStackView]!
+    @IBOutlet weak var boatWidth: NSLayoutConstraint!
+    
+    @IBOutlet weak var buttonGroup: UIStackView!
     
     @IBAction func hideBoat(_ sender: Any) {
         
@@ -33,12 +35,48 @@ class ViewController: UIViewController {
     }
     
     @IBAction func moveButtons(_ sender: Any) {
+        
+        let transform = CGAffineTransform.identity.scaledBy(x: 0.01, y: 0.01)
+        
+        buttonGroup.transform = transform
+        
         UIView.animate(withDuration: 2, animations: {
-            self.buttonGroup.
+            self.buttonGroup.transform = CGAffineTransform.identity
         })
+        
+        
     }
     
     @IBAction func boatRocking(_ sender: Any) {
+    
+        let transform = CGAffineTransform.identity.translatedBy(x: 40, y: -25)
+        
+        self.theBoat.transform = transform
+        
+        UIView.animate(withDuration: 1.5, animations: {
+
+            self.theBoat.transform = CGAffineTransform.identity
+        }, completion: {_ in
+            UIView.animate(withDuration: 1.5, animations: {
+                self.theBoat.transform = CGAffineTransform.identity.translatedBy(x: -40, y: -25)
+            }, completion: {_ in
+                UIView.animate(withDuration: 1.5, animations: {
+                    self.theBoat.transform = CGAffineTransform.identity.translatedBy(x: 20, y: 12.5)
+                })
+            })
+        })
+    }
+    
+    @IBAction func makeBoatSmaller(_ sender: Any) {
+        
+        if(boatWidth.constant <= 150){
+            boatWidth.constant += 50
+        }
+        else{
+            boatWidth.constant -= 50
+        }
+        
+        
     }
     
 }
